@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-learn</title>
+    <link rel="stylesheet" href="home-page.css">
+    <link  rel="stylesheet" href="illustration.css">
+    <link rel="stylesheet" href="html-css-js-design.css">
+    <link rel="stylesheet" href="editor-tools.css">
+   
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+</head>
+<body>
+    <header class="navigation_bar">
+           <!-- LEFT MENU BUTTON -->
+    <button class="menu-toggle" id="menuToggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <!-- EXISTING LOGO -->
+    <a href="#home" class="logo">
+        <img src="logo.png" alt="Weblearn">
+
+        <div class="logo-text">
+            <h2>Web<span>Learn</span></h2>
+            <small>Learn. Code. Practice. Improve.</small>
+        </div>
+    </a>
+         <!--navigation-->
+
+    <nav class="nav-links" id="navLinks">
+        <ul class="links">
+            <li><a href="home">Home</a></li>
+            <li><a href="#courses">Tutorial</a></li>
+            <li><a href="#feature">Practice</a></li>
+            <li><a href="#learning">Quizzez</a></li>
+            <li><a href="#tools">Tools</a></li>
+        </ul>
+
+    </nav>
+
+<div class="nav-actions">
+<button class="theme-toggle" id="themeToggle" aria-level="Toggle light and dark mode">
+    <i class="fa-solid fa-moon"></i>
+</button>
+<a href="#courses" class="login-btn">Login/Sign Up</a>
+
+</div>
+</header>
+
+<!-- LEFT SIDEBAR -->
+<aside class="sidebar-menu" id="sidebarMenu">
+
+    <h3>MAIN MENU</h3>
+    <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+
+    <h3>LEARN</h3>
+    <a href="html.html"><i class="fa-brands fa-html5"></i> HTML Tutorials</a>
+    <a href="css.html"><i class="fa-brands fa-css3-alt"></i> CSS Tutorials</a>
+    <a href="javascript.html"><i class="fa-brands fa-js"></i> JavaScript Tutorials</a>
+
+    <h3>PRACTICE</h3>
+    <a href="editor.html"><i class="fa-solid fa-code"></i> Code Editor</a>
+    <a href="#learning"><i class="fa-solid fa-clipboard-question"></i> Quizzes</a>
+    <a href="#progress"><i class="fa-solid fa-chart-simple"></i> My Progress</a>
+    
+    <h3>Tools</h3>
+    <a href="#coding-tools">
+    <i class="fa-solid fa-screwdriver-wrench"></i>
+    Coding Tools</a>
+
+</aside>
+
+<!-- DARK OVERLAY -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+
+<!-- home or main  section-->
+<section class="home_main-section" id="home">
+ <div class="home-content">
+ <div class="welcome-badge">
+     Welcome to Web Learn
+ </div>
+<h1>
+    Start Learning 
+    <span>One Lesson</span>
+    at a Time
+</h1>
+<p>Lorem ipsum dolor sit amet consectetur 
+    adipisicing elit </p>
+
+    <div class="home-buttons">
+        <a href="#courses" class="primary-btn">
+            Start Learning
+         <i class="fa-solid fa-arrow-right"></i>
+        </a>
+       <a href="#courses" class="outline-btn">
+        Explore Course
+       </a>
+    </div>
+
+    <div class="home-stats">
+     
+        <div class="stat-items">
+            <strong>3</strong>
+            <span>Core Technology</span>
+        </div>
+
+        <div class="stat-items">
+            <strong>100%</strong>
+            <span>Biginner Friendly</span>
+        </div>
+   
+         <div class="stat-items">
+            <strong>24/7</strong>
+            <span>Learning Access</span>
+         </div>
+
+    </div>
+</div>
+
+<!--coding html,css, and javascript illustration-->
+<!--html logoo-->
+<div class="main-visual">
+<div class="floating-badge html-badge">
+    <i class="fa-brands fa-html5"></i>
+</div>
+
+<!--css logo-->
+<div class="floating-badge css-badge">
+<i class="fa-brands fa-css3-alt"></i>
+</div>
+
+<!--javascript logo-->
+<div class="floating-badge js-badge">
+JS
+</div>
+
+ <div class="hero-laptop">
+        <img
+            src="laptop.png"
+            alt="Laptop displaying programming code"
+            class="laptop-img"
+            onerror="this.style.display='none';this.parentElement.classList.add('image-missing')">
+    </div>
+
+      <div class="laptop-placeholder">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <span>Web Learn</span>
+                    </div>
+
+
+     <!-- CAPTION -->
+    <div class="visual-caption">
+         <i class="fa-solid fa-wand-magic-sparkles"></i>
+        Small steps, big dreams.
+    </div>
+
+<div class="code-window">
+    <div class="window-header">
+        <div class="window-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <span>index.html</span>
+    </div>
+
+    <div class="editor-layout">
+
+        <div class="code-area">
+
+            <pre><code><span class="code-purple">&lt;!DOCTYPE html&gt;</span>
+<span class="code-blue">&lt;html&gt;</span>
+  <span class="code-blue">&lt;head&gt;</span>
+    <span class="code-blue">&lt;title&gt;</span>CodePath<span class="code-blue">&lt;/title&gt;</span>
+  <span class="code-blue">&lt;/head&gt;</span>
+  <span class="code-blue">&lt;body&gt;</span>
+    <span class="code-blue">&lt;h1&gt;</span>Hello, World!<span class="code-blue">&lt;/h1&gt;</span>
+    <span class="code-blue">&lt;p&gt;</span>Let's code!<span class="code-blue">&lt;/p&gt;</span>
+  <span class="code-blue">&lt;/body&gt;</span>
+<span class="code-blue">&lt;/html&gt;</span></code></pre>
+
+        </div>
+ <div class="preview-area">
+
+            <div class="preview-title">
+                Live Preview
+            </div>
+
+            <div class="preview-content">
+
+                <h3>Hello, World!</h3>
+
+                <p>Let's code!</p>
+
+                <span class="preview-chip">
+                    Web Learn
+                </span>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+ 
+
+</div>
+
+
+</section>
+
+<!--Course section-->
+<section class="courses section-padding" id="courses">
+    <div class="section-heading">
+    <span class="section-label">
+        Explore our Courses
+    </span>
+    <h2>
+        Choose <span> Your Path</span>
+        <p>
+            Start Learning the three essential technologies 
+            use to build websites.
+        </p>
+    </h2>
+    </div>
+
+    <div class="course-container">
+        <!--HTML courses-->
+
+        <article class="course-card html-card">
+
+ <div class="course-icon html-icon">
+    <i class="fa-brands fa-html5"></i>
+ </div>
+
+ <span class="card-decoration">&lt;/&gt</span>
+ <h3>HTML</h3>
+ <h4>Structure the Web</h4>
+ <p> Learn how to create the structure
+      of websites using HTML elements,
+    tags, and attributes.</p>
+
+    <div class="course-progress">
+   <span>0% completed</span>
+ 
+   <div class="progress-bar">
+    <div class="progress-fill"></div>
+   </div>
+
+    </div>
+
+    <a href="index.html" class="course-btn html-btn">
+    Start Learning
+ 
+    <i class="fa-solid fa-arrow-right"></i>
+    </a>
+        </article>
+
+
+
+        <!--CSS courses-->
+        <article class="course-card css-card">
+
+
+     <div class="course-icon css-icon">
+      <i class="fa-brands fa-css3-alt"></i>
+     </div>
+
+     <span class="card-decoration">✦</span>
+     <h3>CSS</h3>
+     <h4>Style the Web</h4>
+     <p> Discover how to create beautiful,
+         responsive, and visually appealing
+         website designs using CSS.</p>
+
+    <div class="course-progress">
+     <span>0% completed</span>
+
+<div class="progress-bar">
+    <div class="progress-fill"></div>
+</div>
+
+    </div>
+
+    <a href="css.html" class="course-btn css-btn">
+     Start Leaning
+     <i class="fa-solid fa-arrow-right"></i>
+
+    </a>
+        </article>
+
+<!--Javascript courses-->
+
+<article class="course-card js-card">
+    <div class="course-icon js-icon">
+        JS
+    </div>
+
+    <span class="card-decoration">{ }</span>
+  <h3>JavaScript</h3>
+  <h4>Make It Interactive</h4>
+
+<p>Learn programming fundamentals
+    and make your websites interactive
+    using JavaScript.</p>
+
+    <div class="course-progress">
+        <span>0% completed</span>
+
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+
+        </div>
+    </div>
+  
+    <a href="js.html" class="course-btn js-btn">
+     Start Learning
+     <i class="fa-solid fa-arrow-right"></i>
+
+    </a>
+</article>
+
+    </div>
+</section>
+
+
+<!--section-tools like vscode,acode,html editor-->
+
+
+<section class="coding-tools" id="coding-tools">
+
+<div class="tools-heading">
+<span class="tools-label">>Tools for Learning></span>
+<h2>Choose Your <span>Code Editor</span></h2>
+<p>Whether you're using a computer or smartphone,
+   find the right tool to practice HTML, CSS,
+   and JavaScript.</p>
+</div>
+ 
+<div class="tools-container">
+<!--vscode-->
+<article class="tool-card">
+ <a href="https://code.visualstudio.com/download"
+         target="_blank"
+        rel="noopener noreferrer"
+        class="tool-image-link">
+
+        <img src="vscode.png" alt="Visual studio code"
+        class="tool-image"
+        loading="lazy">
+        </a>
+        <span class="device-label">
+            DESKTOP 
+        </span>
+        <h3>Visual Studio Code</h3>
+        <p>A powerful and beginner-friendly code editor
+          for creating websites using HTML, CSS,
+            and JavaScript.</p>
+
+            <div class="device-tags">
+            <span>Windows</span>
+            <span>macOS</span>
+            <span>Linux</span>
+
+            </div>
+             <a href="https://code.visualstudio.com/download"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="tool-btn"> 
+               Download VScode 
+               <i class="fa-solid fa-arrow-up-right-from-square"></i>
+               </a>
+</article>
+ 
+<!--acode app-->
+<article class="tool-card">
+  <a href="https://acode.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="tool-image-link">
+
+            <img src="acode.png" alt="acode editor"
+             class="tool-image" loading="lazy">
+             </a>
+
+             <span class="device-label">
+                ANDROID
+             </span>
+<h3>Acode Editor</h3>
+<p>A lightweight mobile code editor that allows
+    students to write, edit, and preview
+    HTML, CSS, and JavaScript projects.
+</p>
+<div class="device-tags">
+                <span>Android</span>
+                </div>
+
+ <a href="https://acode.app"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="tool-btn">
+        Get Acode
+         <i class="fa-solid fa-arrow-up-right-from-square"></i>
+</a>
+</article>
+
+
+<!--HTML editor for iphone-->
+
+        <article class="tool-card">
+
+            <a href="https://apps.apple.com/ph/app/html-editor/id1580431405"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="tool-image-link">
+
+                <img
+                    src="htmleditor.webp"
+                    alt="HTML Editor App Logo"
+                    class="tool-image"
+                    loading="lazy">
+
+            </a>
+
+            <span class="device-label">
+                iOS
+            </span>
+
+            <h3>HTML Editor</h3>
+
+            <p>
+                A convenient application for writing and
+                editing HTML code using an iPhone or iPad,
+                with tools for previewing web pages.
+            </p>
+
+            <div class="device-tags">
+                <span>iPhone</span>
+                <span>iPad</span>
+            </div>
+
+            <a href="https://apps.apple.com/ph/app/html-editor/id1580431405"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="tool-btn">
+
+                View on App Store
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+        </article>
+
+    </div>
+
+    <!-- BOTTOM MESSAGE -->
+
+    <div class="tools-note">
+
+        <i class="fa-solid fa-circle-info"></i>
+
+        <p>
+            Don't have a code editor installed?
+            You can still practice coding using
+            WebLearn's built-in code editor.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+
+
+</div>
+
+
+
+</section>
+
+
+<script src="script.js"></script>
+</body>
+</html>

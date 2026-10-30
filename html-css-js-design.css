@@ -1,0 +1,33 @@
+.course-container  {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+.course-card {
+    position: relative;
+    padding: 28px;
+    min-height: 365px;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: .35s;
+    display: flex;
+    flex-direction: column;
+}
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rbga(30,60,120,.12);
+}
+
+.html-card {
+    border: 1px solid #ffc7b8;
+    background: linear-gradient(140deg, #fff5f1, #fff);
+}
+.css-card {
+    border: 1px solid #a9d3ff;
+    background: linear-gradient(140deg,  #eff7ff, #fff);
+}
+.js-card {
+    border: 1px solid #ffe483;
+    background: linear-gradient(140deg, #fffbea, #fff);
+}

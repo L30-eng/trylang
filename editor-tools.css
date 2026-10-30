@@ -1,0 +1,317 @@
+.coding-tools {
+    padding: 90px 7%;
+    background: #0b1730;
+    color: #ffffff;
+}
+
+
+.tools-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+.tools-label {
+    display: inline-block;
+    color: #38bdf8;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+.tools-heading h2 {
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+.tools-heading h2 span {
+    color: #3b82f6;
+}
+
+.tool-heading p {
+    color: #a5b4cf;
+    font-size: 15px;
+    line-height: 1.8;
+}
+/* tool grid */
+.tool-container {
+   display: grid;
+   grid-template-columns: 
+   repeat(3, minmax(0, 1fr));
+   gap: 25px;
+   max-width: 1200px;
+   margin: 0 auto;
+
+}
+/* tool cards */
+.tool-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+    background: #142445;
+    border: 1px solid #263b60;
+     transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+.tool-card:hover {
+    transform: translateY(-8px);
+    border-color: #3b82f6;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/*clickable images */
+.tool-image-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 165px;
+    padding: 20px;
+    margin-bottom: 22px;
+    overflow: hidden;
+    text-decoration: none;
+    transition:
+        background 0.3s ease,
+        border-color 0.3s ease;
+}
+/* vscode,acode size*/
+.tool-image {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+}
+
+.tool-card:nth-child(1) .tool-image {
+    width: 180px;
+    height: 180px;
+}
+
+ 
+.tool-card:nth-child(2) .tool-image {
+    width: 180px;
+    height: 180px;
+}
+.tool-image-link:hover {
+    background: #243e6c;
+    border-color: #38bdf8;
+}
+
+.tool-image-link:hover .tool-image {
+    transform: scale(1.12);
+}
+
+/* device lebel */
+
+.device-label {
+    display: inline-block;
+    color: #38bdf8;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+/* discription */
+.tool-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 14px;
+}
+
+.tool-card p {
+    color: #a5b4cf;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 22px;
+}
+ 
+/* device tags */
+
+.device-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 22px;
+}
+.device-tags span {
+    padding: 7px 12px;
+    background: #20385f;
+    color: #cbd5e1;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+/* bottons */
+
+.tool-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 13px 20px;
+    margin-top: auto;
+    background: #2563eb;
+    color: #ffffff;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+     transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+} 
+.tool-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.tool-btn:focus-visible,
+.tool-image-link:focus-visible {
+    outline: 3px solid #38bdf8;
+    outline-offset: 4px;
+}
+
+.tools-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    max-width: 750px;
+    margin: 45px auto 0;
+    padding: 18px 22px;
+
+    background: rgba(37, 99, 235, 0.1);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    border-radius: 12px;
+}
+
+.tools-note i {
+    color: #60a5fa;
+    font-size: 20px;
+}
+
+.tools-note p {
+    color: #cbd5e1;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* tablet */
+
+@media (max-width: 900px) {
+
+    .tools-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .coding-tools {
+        padding: 70px 5%;
+    }
+}
+
+/* mobile */
+
+@media (max-width: 600px) {
+
+    .coding-tools {
+        padding: 60px 20px;
+    }
+
+    .tools-heading {
+        margin-bottom: 35px;
+    }
+
+    .tools-heading h2 {
+        font-size: 28px;
+    }
+
+    .tools-heading p {
+        font-size: 14px;
+    }
+
+    .tools-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .tool-card {
+        padding: 24px;
+    }
+
+    .tool-image-link {
+        height: 145px;
+    }
+
+    .tool-image {
+        width: 95px;
+        height: 95px;
+    }
+
+    .tools-note {
+        align-items: flex-start;
+        margin-top: 30px;
+        padding: 16px;
+    }
+
+    .tools-note p {
+        font-size: 13px;
+    }
+}
+
+/* PORTRAIT CODING TOOLS CARDS */
+
+.tools-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 280px));
+    justify-content: center;
+    gap: 25px;
+}
+
+/* PORTRAIT CARD */
+.tool-card {
+    width: 100%;
+    min-height: 450px;
+    padding: 25px;
+    border-radius: 18px;
+}
+
+/* PORTRAIT IMAGE CONTAINER */
+.tool-image-link {
+    width: 100%;
+    height: 220px;
+    border-radius: 15px;
+}
+
+/* APPLICATION LOGO */
+.tool-image {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+    .tools-container {
+        grid-template-columns: repeat(2, minmax(0, 280px));
+    }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .tools-container {
+        grid-template-columns: minmax(0, 320px);
+    }
+
+    .tool-card {
+        min-height: 420px;
+    }
+
+    .tool-image-link {
+        height: 190px;
+    }
+}
